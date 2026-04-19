@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEARNHUB - STUDENT LEARING PLATFORM</title>
+  <STYLE>
+    :root {
+      font-family: "Inter", system-ui,sans-serif;
+      color: black;
+      background-color: whitesmoke;
+    }
+    *{
+      line-height:1.6;
+      box-sizing: border-box;
+    }
+    bidy{
+      magin:0;
+    }
+    header {
+      background-color: lightpink;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid orchid;
+    }
+    .brand { 
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand img {
+      width:50px;
+      height:50px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .brand h1 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    nav ul { display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav a { color:gray
+      text-decoration: none;
+      font-weight: 500;
+      }
+      nav a:hover {
+        color: orangered;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 560px
+        gap: 40px;
+        align-items: center;
+        padding: 40px;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: yellow;
+        color: grey;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+      .btn:hover {
+        background-color: lightskyblue;
+      }
+      .features {
+        padding: 40px;
+        background-color: lightskyblue;
+      }
+      .features h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background-color: lavender;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: paleturquoise;
+  </STYLE>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">LearnHub</div>
+    background-color: #4CAF50;
+    color: white;
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>EMPOWERING STUDENTS TO LEARN SMARTER</h1>
+    <p>Access courses, track progress, and collaborate with peers—all in one place.</p>
+    <a href="#features" class="btn">EXPLORE FEATURES</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>PLATFORM HIGHLIGHTS</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>📚 COURSES</h3>
+        <p>Wide range of curated courses across subjects with interactive lessons.</p>
+      </div>
+      <div class="card">
+        <h3>📈 PROGRESS TRACKING</h3>
+        <p>Monitor your learning journey with personalized dashboards and analytics.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 COLLABORATION</h3>
+        <p>Connect with peers, join study groups, and share resources seamlessly.</p>
+      </div>
+      <div class="card">
+        <h3>🎯  GOALS</h3>
+        <p>Set learning goals and achieve milestones with guided support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 LearnHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
